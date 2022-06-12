@@ -7,14 +7,20 @@
     --border-radius: .3rem;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: var(--primary);
-    margin: 0;
+    height: 100%;
     padding: 0;
+    margin: 0;
     font-family: "IBM Plex Sans", sans-serif;
     color: var(--dark);
     line-height: 1.5;
@@ -41,6 +47,14 @@ h6 {
 main {
     margin: 20px auto;
     width: 94%;
+}
+
+.post-list {
+    list-style: none;
+}
+.user {
+    font-size: 1rem;
+    margin-left: auto;
 }
 
 .wrapper {
@@ -83,23 +97,24 @@ p {
 
 .btn-back {
     border-radius: var(--border-radius);
-    color: var(--primary);
+    color: var(--light-dark);
     border: none;
     outline: none;
-    background-color: var(--light-dark);
+    background-color: var(--dark);
     box-shadow: 3px 3px var(--secondary);
     transform: translate(-1px, -1px);
     display: inline-block;
     width: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 15px;
     text-decoration: none;
     font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .btn-back:hover {
-    color: var(--primary);
-    background-color: var(--tertiary);
+    color: var(--light-dark);
+    background-color: var(--dark);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
 }
@@ -149,6 +164,7 @@ p {
     border-radius: var(--border-radius);
 }
 
+
 .icon-danger {
     color: rgb(255, 70, 70);
 }
@@ -175,6 +191,10 @@ p {
     padding: 1%;
 }
 
+#content {
+    min-height: 150px;
+}
+
 h4 {
     font-weight: 700;
     margin: 0;
@@ -184,6 +204,7 @@ h4 {
 
 .link {
     color: var(--light-dark);
+    margin-right: 15px;
 }
 
 .login-link {
@@ -195,6 +216,11 @@ h4 {
     line-height: 1.25;
     float: top;
 }
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
 
 footer {
     border-top: 1px solid #ccc;
@@ -217,11 +243,16 @@ footer {
 
 .form-input {
     width: 100%;
-    padding: 3%;
+    padding: 0.5%;
     margin: 5px 0;
     font-size: 1.2rem;
     border: 2px solid var(--light-dark);
     border-radius: var(--border-radius);
+}
+
+#comment {
+    min-height: 5rem;
+    margin-bottom: 10px;
 }
 
 .min-100-vh {
@@ -234,6 +265,10 @@ footer {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+#post-text {
+    margin-bottom: 10px;
 }
 
 .flex-row {
